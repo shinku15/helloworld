@@ -1,5 +1,14 @@
 source 'https://rubygems.org'
 
+group :production do
+  gem 'pg', '0.18.4'
+end
+
+group :development, :test do
+  gem 'sqlite3', '1.3.11'
+  gem 'byebug',  '9.0.0', platform: :mri
+end
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.7'
